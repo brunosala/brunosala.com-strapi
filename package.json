@@ -11,6 +11,7 @@
   },
   "devDependencies": {},
   "dependencies": {
+    "slugify": "^1.4.2",
     "strapi": "3.0.2",
     "strapi-admin": "3.0.2",
     "strapi-connector-mongoose": "3.0.2",
@@ -26,7 +27,7 @@
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "4078f0d6-ba3f-4ac8-ae57-8111b3026247"
+    "uuid": "87f1af22-3f96-4e29-893f-2ca1770f39e1"
   },
   "engines": {
     "node": ">=10.0.0",

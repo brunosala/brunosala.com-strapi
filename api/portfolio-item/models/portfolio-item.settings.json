@@ -1,0 +1,74 @@
+{
+  "kind": "collectionType",
+  "collectionName": "portfolio_items",
+  "info": {
+    "name": "Portfolio Item"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "body": {
+      "type": "richtext"
+    },
+    "tag": {
+      "type": "enumeration",
+      "enum": [
+        "summary",
+        "case_study",
+        "opens_new_tab",
+        "no_resource"
+      ]
+    },
+    "slider_thumbnails": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "date_string": {
+      "type": "string"
+    },
+    "slider_fullres": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "featured_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "slug": {
+      "type": "string",
+      "required": false,
+      "unique": false
+    }
+  }
+}
