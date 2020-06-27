@@ -7,7 +7,7 @@ module.exports = ({ env }) => ({
         uri: "${process.env.ATLAS_URI || ''}"
       },
       options: {
-        "ssl": true
+        "ssl": false
       },
     },
   },
