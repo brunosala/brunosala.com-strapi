@@ -29,17 +29,6 @@
         "no_resource"
       ]
     },
-    "slider_thumbnails": {
-      "collection": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false
-    },
     "date_string": {
       "type": "string"
     },
@@ -69,6 +58,9 @@
       "type": "string",
       "required": false,
       "unique": false
+    },
+    "outbound_url": {
+      "type": "string"
     }
   }
 }
