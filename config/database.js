@@ -4,8 +4,7 @@ module.exports = ({ env }) => ({
     default: {
       connector: 'mongoose',
       settings: {
-        uri: "${process.env.ATLAS_URI}",
-        database: "${process.env.DATABASE_NAME}"
+        uri: "${process.env.ATLAS_URI}"
       },
       options: {
         "ssl": true
