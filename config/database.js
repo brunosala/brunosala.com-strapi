@@ -4,7 +4,8 @@ module.exports = ({ env }) => ({
     default: {
       connector: 'mongoose',
       settings: {
-        uri: "mongodb+srv://bsc_strapi_admin:rK5gvSNR3BECGn8r@cluster0-anijk.mongodb.net/brunosala_com-strapi?retryWrites=true&w=majority"
+        uri: "${process.env.ATLAS_URI}",
+        database: "${process.env.DATABASE_NAME}"
       },
       options: {
         "ssl": true
