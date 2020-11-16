@@ -1,2 +1,1 @@
 Node React GraphQL
-Up
